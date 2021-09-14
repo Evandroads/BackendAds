@@ -1,0 +1,17 @@
+//Teste de Requisições REST
+@baseURL = http://localhost:4000
+
+###
+//GET Lista todas as categorias
+GET {{baseURL}}/categorias
+Content-Type: application/json
+
+###
+//POST - Inclui uma nova categoria
+POST {{baseURL}}/categorias
+Content-Type: application/json
+
+{
+    "nome":"Churrascarias",
+    "status":"ativo"
+}
